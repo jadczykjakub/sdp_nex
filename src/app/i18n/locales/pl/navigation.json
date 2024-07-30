@@ -1,0 +1,22 @@
+{
+    "expertise": {
+        "title": "Expertise",
+        "href": "/expertise"
+    },
+    "news": {
+        "title": "News",
+        "href": "/news"
+    },
+    "people": {
+        "title": "People",
+        "href": "/people"
+    },
+    "about-us": {
+        "title": "About us",
+        "href": "/about-us"
+    },
+    "contact": {
+        "title": "Contact",
+        "href": "/contact"
+    }   
+}

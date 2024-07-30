@@ -1,0 +1,20 @@
+{
+    "title": "About us",
+    "description": [
+        {"paragraph": "We are an independent IP firm with an interdisciplinary team of highly skilled specialists in law and in science."},
+        {"paragraph": "We provide comprehensive services in intellectual property law. We deliver a one-stop IP solution for local and international companies and foreign IP law firms."},
+        {"paragraph": "The partners for many years worked at top Warsaw law firms representing clients from various business sectors such as pharma, consumer goods, engineering and other market sectors."},
+        {"paragraph": "The team have advised in numerous “make-law” and high value cases that become points of reference in the Polish IP landscape, e.g. litigation concerning patents for second medical use, 3D trademarks, parasitic competition and several breakthrough patent & trademark invalidation matters in the Supreme Administrative Court."},
+        {"paragraph": "We represented clients in matters in which Polish jurisprudence defined essential IP issues such as the doctrine of equivalents, quantification of damages, legal interest in obtaining a preliminary injunction, trademarks of repute, technical function of a design, and many others. The need to develop strategies and arguments for both plaintiffs and defendants meant insight from a wider perspective."},
+        {"paragraph": "We are rooted in the Polish scientific community and have links to the best professors and experts in relevant areas."}
+    ],
+    "principles": [
+        {"title": "Law & Science", "description": "Complex IP disputes require technical and legal expertise. We combine legal knowledge with strong academic backgrounds. We form interdisciplinary teams of lawyers and scientists that can respond quickly and efficiently to that which is needed for a particular matter."},
+        {"title": "Highest standards", "description": "We strive to provide a first-class quality of legal work and client service. Our partners attend to each matter personally. We pay special attention to communication & responsiveness. We are able to react efficiently to the pressing questions and issues clients regularly have."},
+        {"title": "Effective work", "description": "We focus on good work. We work effectively which means we can offer clients reasonable rates of charge. We are located within a 5-minute walk from the Polish Patent Office which is convenient for oral hearings and last-minute filings."},
+        {"title": "Business orientation", "description": "We appreciate the commercial goals of clients. The theory of IP law is a passion of ours, but most times we see intellectual property as an instrument which is used by companies in a highly competitive market environment. No system of IP protection is perfect. We deal with it daily and we are able to get to the nitty-gritty of it. In result, we formulate business-oriented, cutting edge strategies for clients."}
+    ],
+    "principlesTitle": "Our principles"
+
+
+}

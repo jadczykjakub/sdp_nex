@@ -1,0 +1,26 @@
+{
+    "hero": {
+        "title1": "Własność intelektualna w biznesie.",
+        "title2": "Doradzamy jak chronić innowacje, markę i produkt. Wspieramy klientów przy umowach i sporach dotyczących własności intelektualnej.",
+        "title3": "Łączymy wiedzę prawniczą i techniczną ze zrozumieniem biznesu. Nasi eksperci pracowali przy sprawach, które ukształtowały polską praktykę własności intelektualnej. Są notowani w międzynarodowych rankingach prawniczych i wykładają na renomowanych polskich uczelniach.",
+        "button": {
+            "title": "Usługi",
+            "href": "expertise"
+        }
+    },
+    "recommendations": [
+        {"title": "Legal500 2024", "href": "https://www.legal500.com/c/poland/intellectual-property/"},
+        {"title": "Chambers Europe 2024", "href": "https://chambers.com/department/sierzant-dudzinski-intellectual-property-europe-7:34:173:1:23344606"},
+        {"title": "WTR1000 2024", "href": "https://www.worldtrademarkreview.com/rankings/wtr-1000/profile/firm/sdp-sierzant-dudzinski"}
+    ],
+    "we_help_clients": [
+        {"title": "Patents.", "text": "We guide through nuances of patent law to ensure effective protection of innovations."},
+        {"title": "IP Litigation.", "text": "We are experts at litigating intellectual property & unfair competition cases in Poland."},
+        {"title": "Trademarks.", "text": "We register, maintain, and enforce trademarks to increase the value of brands."},
+        {"title": "EP Validations.", "text": "We provide a multi-step verification scheme that allows us to ensure quality and safety of a process to validate European Patents."},
+        {"title": "Designs.", "text": "We draft & implement strategies for optimal protection of a product."},
+        {"title": "IP Transactions. ", "text": "We assist with intellectual property contracts such as licenses or M&As involving important intellectual assets."},
+        {"title": "Copyright.  ", "text": "We maximize the benefits arising from obtaining rights to a copyrightable work."},
+        {"title": "Regulatory. ", "text": "We navigate through regulatory issues related to R&D, e-commerce, and GDPR."}
+    ]
+}

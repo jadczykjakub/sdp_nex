@@ -1,0 +1,28 @@
+{
+    "top": {
+        "default_page": {
+            "title": "Skontaktuj się z nami",
+            "button": "Kontakt",
+            "url": "/contact"
+        },
+        "contact_page": {
+            "title": "Odwiedź nasze biuro",
+            "button": "Google maps",
+            "url": "https://maps.app.goo.gl/vsk1MXFmdnLcAC6o8"
+        }
+    },
+    "middle": {
+        "mail_url": "office@sdp.legal",
+        "mail_title": "office@sdp.legal",                
+        "linkedin_url": "https://www.linkedin.com/company/sdp-sierzant-dudzinski/",
+        "linkedin_title": "linkedin",
+        "info_1": "SDP D. Sierżant K. Dudziński Sp. k.",
+        "info_2": "ul. Łowicka 19 lok. U3",
+        "info_3": "02-574 Warszawa, Polska",
+        "info_4": "NIP: 521 401 99 79"
+    },
+    "bottom": {
+        "copyright": "© Copyright 2022 SDP - all rights reserved.",
+        "policy": "Privacy Policy"
+    }
+}

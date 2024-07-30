@@ -1,0 +1,19 @@
+{
+    "title": "O nas",
+    "description": [
+        {"paragraph": "Jesteśmy kancelarią prawną wyspecjalizowaną w ochronie własności intelektualnej i zwalczaniu nieuczciwej konkurencji."},
+        {"paragraph": "Nasz zespół tworzą specjaliści z dziedziny prawa i nauki - radcowie prawni i rzecznicy patentowi."},
+        {"paragraph": "Oferujemy rozwiązania dotyczące ochrony prawnej wartości niematerialnych w Polsce i na całym świecie, działając w formule „one-stop-shop”. Działamy w oparciu o najwyższe standardy."},
+        {"paragraph": "Nasz zespół posiada duże doświadczenie w prowadzeniu skomplikowanych spraw takich jak spory patentowe (w tym z dziedziny farmacji), spory o renomowane znaki towarowe czy z zakresu zwalczania nieuczciwej konkurencji."},
+        {"paragraph": "Reprezentowaliśmy Klientów w sprawach, które kształtowały polskie orzecznictwo dot. własności intelektualnej, m.in. w zakresie takich kwestii jak doktryna ekwiwalentów, sposób obliczania odszkodowania za naruszenie praw IP, trójwymiarowe znaki towarowe i wiele innych."},
+        {"paragraph": "Wspólnicy SDP przez wiele lat pracowali we wiodących warszawskich kancelariach prawnych reprezentując czołowe spółki z wielu sektorów rynku, m.in. farmacji, dóbr konsumpcyjnych, mody, nowych technologii czy przemysłu."},
+        {"paragraph": "Wywodzimy się ze środowiska naukowego i jesteśmy aktywnymi wykładowcami. Dzięki czemu – gdy to wymagane – współpracujemy z najlepszymi naukowcami i ekspertami w danych dziedzinach nauki."}
+    ],
+    "principlesTitle": "Nasze wartości",
+    "principles": [
+        {"title": "Law & Science", "iconEnum": 1 ,"description": "Złożone spory dotyczące własności intelektualnej wymagają zarówno wiedzy prawnej, jak i technicznej. Łączymy te dwie umiejętności w ramach jednej firmy. Tworzymy interdyscyplinarne zespoły prawników i naukowców, które sprawnie odpowiadają na potrzeby danej sprawy."},
+        {"title": "Highest standards","iconEnum": 2 , "description": "Dążymy do zapewnienia najwyższej jakości usług prawnych i obsługi klienta. Każdą sprawą osobiście zajmuje się wspólnik SDP. Zwracamy szczególną uwagę na komunikację z klientami i responsywność. Potrafimy skutecznie reagować na pilne zapytania i problemy, z którymi na co dzień borykają się nasi klienci. Mówimy językiem biznesowym, a nie trudnymi do zrozumienia zwrotami prawniczymi."},
+        {"title": "Effective work", "iconEnum": 3 ,"description": "Stawiamy na wydajną pracę. Pracujemy efektywnie, co oznacza, że możemy zaoferować klientom rozsądne stawki za nasze usługi. Zależy nam, aby nasi Klienci nie byli zaskakiwani wysokością kosztów. Znajdujemy się w odległości 5 minut spacerem od Urzędu Patentowego RP, co jest istotnym udogodnieniem w przypadku rozpraw w urzędzie."},
+        {"title": "Business orientation", "iconEnum": 4 ,"description": "Stawiamy na wydajną pracę. Pracujemy efektywnie, co oznacza, że możemy zaoferować klientom rozsądne stawki za nasze usługi. Zależy nam, aby nasi Klienci nie byli zaskakiwani wysokością kosztów. Znajdujemy się w odległości 5 minut spacerem od Urzędu Patentowego RP, co jest istotnym udogodnieniem w przypadku rozpraw w urzędzie."}
+    ]
+}

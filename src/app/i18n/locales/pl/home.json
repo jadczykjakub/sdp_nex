@@ -1,0 +1,31 @@
+{
+    "hero": {
+        "title1": "Polish Intellectual Property Law Firm.",
+        "title2": "Comprehensive IP services for corporations and law firms.",
+        "title3": "We took part in cases which defined the Polish IP landscape. We combine law & science by having skilled attorneys, patent attorneys and scientists in one office.",
+        "button": {
+            "title": "Our services",
+            "href": "expertise"
+        }
+    },
+    "recommendations": [
+        {"title": "Legal500 2024", "href": "https://www.legal500.com/c/poland/intellectual-property/"},
+        {"title": "Chambers Europe 2024", "href": "https://chambers.com/department/sierzant-dudzinski-intellectual-property-europe-7:34:173:1:23344606"},
+        {"title": "WTR1000 2024", "href": "https://www.worldtrademarkreview.com/rankings/wtr-1000/profile/firm/sdp-sierzant-dudzinski"}
+    ],
+    "we_help_clients": [
+        {"title": "Patenty.", "text": "Zgłaszamy patenty, aby zapewnić skuteczną ochronę prawną innowacji. Prowadzimy badania patentowe, aby uniknąć wkroczenia w monopol patentowy innych osób."},
+        {"title": "Spory sądowe i administracyjne.", "text": "Jesteśmy ekspertami w prowadzeniu sporów dotyczących spraw z zakresu własności intelektualnej, ochrony dóbr osobistych i zwalczania nieuczciwej konkurencji."},
+        {"title": "Znaki towarowe.", "text": "Rejestrujemy i egzekwujemy prawa do znaków towarowych, aby zwiększyć wartość rynkową marki. Zwalczamy towary podrobione."},
+        {"title": "Zarządzanie portfolio praw własności intelektualnej.", "text": "Zarządzamy portfolio praw IP naszych klientów na całym świecie. Przygotowujemy i wdrażamy strategię ochrony produktów, marki i technologii."},
+        {"title": "Wzory przemysłowe. ", "text": "Przygotowujemy i wdrażamy strategie optymalnej ochrony wyglądu zewnętrznego produktu."},
+        {"title": "Nieuczciwa konkurencja. ", "text": "Przeciwdziałamy nieuczciwym praktykom rynkowym konkurentów, podejmujemy działania w celu ochrony pozycji rynkowej naszych klientów."},
+        {"title": "Prawa autorskie. ", "text": "Maksymalizujemy korzyści wynikające z praw do utworów autorskich."},
+        {"title": "Umowy i transakcje.", "text": "Wspieramy klientów w przygotowaniu i negocjowaniu umów licencyjnych, umów dot. transferu technologii, przeniesienia praw własności intelektualnej, a także umów dot. korzystania z wizerunku. Prowadzimy badania typu due diligance."},
+        {"title": "Know-how. ", "text": "Wdrażamy projekty dot. ochrony tajemnic przedsiębiorstwa, aby zminimalizować ryzyko pozyskania ich przez konkurentów rynkowych."},
+        {"title": "Wynalazczość pracownicza. ", "text": "Wspieramy w opracowaniu i wdrażaniu procedur dot. wynalazków pracowniczych i projektów racjonalizatorskich w przedsiębiorstwach."},
+        {"title": "Dobra osobiste. ", "text": "Reprezentujemy klientów w sprawach o ochronę dóbr osobistych firm i osób fizycznych, w szczególności dobrego imienia, wizerunku i prawa do prywatności."},
+        {"title": "Kontrakty IT. ", "text": "Wspieramy przy opracowywaniu, negocjowaniu i wdrażaniu umów dotyczących technologii informacyjnych. Zapewniamy bieżące wsparcie prawne w czasie realizacji złożonych projektów IT, w tym z aspektem międzynarodowym."},
+        {"title": "Szkolenia.", "text": "Szkolimy kadry naszych klientów pokazując im wartość i sposób korzystania z praw własności intelektualnej."}
+    ]
+}

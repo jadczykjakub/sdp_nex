@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+@layer components {
+    .button {
+        color: #fff;
+        padding: 1em 2em;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 999px;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        background-color: theme('colors.primary');
+        z-index: 2;
+        font-weight: bold;
+        width: fit-content;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            border-radius: 999px;
+            transition: 0.3s ease-in-out;
+        }
+
+        &:before {
+            background-color: #fff;
+            width: 0;
+            z-index: -1;
+        }
+
+        &:after {
+            background-color: theme('colors.primary');
+            width: 100%;
+            z-index: -2;
+        }
+
+        &:hover {
+            color: theme('colors.primary');
+
+            &:before {
+                width: 100%;
+            }
+
+            svg{
+                path{
+                    fill: theme('colors.primary')
+                }
+            }
+        }
+    }
+
+    .topDecoration {
+        @apply before:absolute before:left-[-10%] before:top-[1px] before:h-px before:w-[110%] before:content-[''] before:bg-gradient-to-r before:from-transparent before:via-primary before:to-transparent
+    }
+
+    .bottomDecoration {
+        @apply after:absolute after:left-[-10%] after:bottom-[1px] after:h-px after:w-[110%] after:content-[''] after:bg-gradient-to-r after:from-transparent after:via-primary after:to-transparent
+    }
+
+    .layout {
+        @apply max-w-7xl mx-auto;
+    }
+
+    .triangle::after {
+        border-bottom: 20px solid theme('colors.secondary');
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        content: "";
+        height: 0;
+        left: 50%;
+        position: absolute;
+        top: -20px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 0;
+    }
+
+    .triangleprimary::after {
+        border-bottom: 10px solid theme('colors.primary');
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        content: "";
+        height: 0;
+        left: 50%;
+        position: absolute;
+        top: -10px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 0;
+    }
+
+}
