@@ -27,7 +27,7 @@ export default async function page({ params }: { params: any }) {
       locale={params.locale}
       resources={resources}
     >
-      <main className="grid justify-items-center">
+      <main className="grid justify-items-center gap-12 md:gap-20">
         <DecorationWrapper theme="dark" type="single">
           <h1 className="text-3xl font-bold">{t('title')}</h1>
         </DecorationWrapper>

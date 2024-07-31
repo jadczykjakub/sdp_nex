@@ -56,7 +56,7 @@ export default async function page({ params }: { params: any }) {
       locale={params.locale}
       resources={resources}
     >
-      <main className="grid gap-12">
+      <main className="grid gap-12 md:gap-20">
         <h1 className="text-4xl font-bold">{expertise.metadata.title}</h1>
         <div className="grid  xl:grid-cols-[4fr_1fr] gap-8">
           <article>

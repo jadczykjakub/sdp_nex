@@ -20,13 +20,10 @@ export default async function Home({ params: { locale } }: any) {
       locale={locale}
       resources={resources}
     >
-      <main>
+      <main className='grid gap-16 md:gap-20'>
         <Hero lang={locale} />
-        {/* <Recommendation  data={resources?.[locale].home.recommendations}  /> */}
-        <WeHelpClients lang={locale}/>
-
-        <ClientComponent />
- 
+        <Recommendation  lang={locale} />
+        <WeHelpClients lang={locale} />
       </main>
     </TranslationsProvider>
   )

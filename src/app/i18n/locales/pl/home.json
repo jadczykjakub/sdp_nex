@@ -8,6 +8,7 @@
             "href": "expertise"
         }
     },
+    "recommendationTitle": "Kancelaria rekomendowana przez",
     "recommendations": [
         {"title": "Legal500 2024", "href": "https://www.legal500.com/c/poland/intellectual-property/"},
         {"title": "Chambers Europe 2024", "href": "https://chambers.com/department/sierzant-dudzinski-intellectual-property-europe-7:34:173:1:23344606"},

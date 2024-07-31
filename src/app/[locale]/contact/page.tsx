@@ -16,7 +16,7 @@ export default async function Contact({ params: { locale } }: any) {
       locale={locale}
       resources={resources}
     >
-      <main className="grid justify-items-center gap-8">
+      <main className="grid justify-items-center gap-12 md:gap-20">
         <DecorationWrapper theme="dark" type="single">
           <h1 className="text-2xl font-bold">
             {t('title', { ns: 'contact' })}

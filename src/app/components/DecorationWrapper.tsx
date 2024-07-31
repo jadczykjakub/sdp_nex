@@ -16,15 +16,17 @@ const DecorationWrapper = ({
   classFromProps,
 }: IDecorationWrapper) => {
   return (
-    <div
-      className={cn(`relative w-fit py-4 my-1   ${classFromProps}`, {
-        'bottomDecoration': type === 'single',
-        'topDecoration bottomDecoration': type === 'double',
-        'topDecoration': type === 'singleTop',
-        'after:via-secondary before:via-secondary': theme === 'dark',
-      })}
-    >
-      {children}
+    <div className='grid justify-items-center'>
+      <div
+        className={cn(`relative w-fit py-4 my-1   ${classFromProps}`, {
+          bottomDecoration: type === 'single',
+          'topDecoration bottomDecoration': type === 'double',
+          topDecoration: type === 'singleTop',
+          'after:via-secondary before:via-secondary': theme === 'dark',
+        })}
+      >
+        {children}
+      </div>
     </div>
   )
 }

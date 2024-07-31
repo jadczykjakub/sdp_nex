@@ -39,7 +39,7 @@ export default async function page({ params }: { params: any }) {
       locale={params.locale}
       resources={resources}
     >
-      <main className='grid justify-items-center gap-8'>
+      <main className='grid justify-items-center gap-12 md:gap-20'>
 
         <DecorationWrapper type="single" theme="dark">
           <h1 className="text-3xl font-bold">{blog.metadata.title}</h1>

@@ -18,7 +18,7 @@ export default async function Hero({ lang }: any) {
           <h1 className="text-3xl font-bold ">
             {t('hero.title1', { ns: 'hero' })}
           </h1>
-          <h2 className="text-3xl ">{t('hero.title2', { ns: 'hero' })}</h2>
+          <h2 className="text-3xl font-extralight">{t('hero.title2', { ns: 'hero' })}</h2>
           <p className="font-extralight md:text-xl  max-md:pt-36">
             {t('hero.title3', { ns: 'hero' })}
           </p>

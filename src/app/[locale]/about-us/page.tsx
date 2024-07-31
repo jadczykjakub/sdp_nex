@@ -34,7 +34,7 @@ export default async function AboutUs({ params: { locale } }: any) {
       locale={locale}
       resources={resources}
     >
-      <main>
+      <main className='grid gap-12 md:gap-20'>
         <DecorationWrapper theme="dark" type="single">
           <h1 className="text-3xl font-bold">
             {t('title', { ns: 'about-us' })}
