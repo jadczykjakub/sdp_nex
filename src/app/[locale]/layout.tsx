@@ -3,11 +3,11 @@ import { Poppins } from 'next/font/google'
 import '@/app/globals.css'
 import i18nConfig from '@/app/i18n/i18n.config'
 import { dir } from 'i18next'
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer'
+import Navigation from '@/app/components/Navigation'
+import Footer from '@/app/components/Footer'
 import initTranslations from '@/app/i18n/i18n'
-import TranslationsProvider from '../components/TranslationProvider'
-import ExpertiseWideMenu from '../components/expertiseWideMenu'
+import TranslationsProvider from '@/app/components/TranslationProvider'
+import ExpertiseWideMenu from '@/app/components/ExpertiseWideMenu'
 
 const poppins = Poppins({
   subsets: ['latin'],

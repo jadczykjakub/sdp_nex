@@ -25,6 +25,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-i18next": "^14.1.2",
+    "sharp": "^0.33.4",
     "sugar-high": "^0.7.0",
     "tailwind-merge": "^2.4.0"
   },

@@ -33,6 +33,8 @@ export default async function Hero({ lang }: any) {
           src={heroImage}
           alt="sdp owners"
           className="self-end max-md:absolute max-sm:bottom-10 max-md:opacity-60 "
+          placeholder='blur'
+
         />
       </div>
     </DecorationWrapper>

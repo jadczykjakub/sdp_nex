@@ -20,7 +20,6 @@ export default async function page({ params }: { params: any }) {
     return dateB.getTime() - dateA.getTime()
   });
 
-  console.log(allTeam, "--------------------")
 
   return (
     <TranslationsProvider
@@ -34,12 +33,11 @@ export default async function page({ params }: { params: any }) {
             <h1 className="text-3xl font-bold">{t('title')}</h1>
           </DecorationWrapper>
         </div>
-        <h1>siema</h1>
         <div>
           {allTeam.map((item, index) => {
             return (
               <Link href={`/team/${item.slug}`} key={index}>
-                {item.slug}
+                {item.metadata.title}
               </Link>
             )
           })}

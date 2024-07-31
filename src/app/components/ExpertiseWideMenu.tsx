@@ -1,5 +1,5 @@
 import React from 'react'
-import { getSortedExpertise } from '../../../lib/get-expertise'
+import { getSortedExpertise } from '@/../lib/get-expertise'
 import initTranslations from '@/app/i18n/i18n'
 import Link from 'next/link'
 import Chevron from '@/../public/images/svg/chevron.svg'
@@ -15,7 +15,7 @@ export default async function ExpertiseWideMenu({ lang }: { lang: string }) {
       <div>
         <h2>{t('dispute', { ns: 'expertise' })}</h2>
         <ul className='grid gap-1 text-white'>
-          {dispute.map((item, index) => {
+          {dispute?.map((item, index) => {
             return (
               <li key={index} className='flex  border-primary group/link   hover:border-l hover:pl-2 transition-all relative overflow-hidden'>
                 <Link href={`/expertise/${item.slug}`} key={index}>
@@ -30,7 +30,7 @@ export default async function ExpertiseWideMenu({ lang }: { lang: string }) {
       <div>
         <h2>{t('protect', { ns: 'expertise' })}</h2>
         <ul className='grid gap-1 text-white'>
-          {protect.map((item, index) => {
+          {protect?.map((item, index) => {
             return (
               <li key={index} className='flex  border-primary group/link   hover:border-l hover:pl-2 transition-all relative overflow-hidden'>
                 <Link href={`/expertise/${item.slug}`} key={index}>
@@ -45,7 +45,7 @@ export default async function ExpertiseWideMenu({ lang }: { lang: string }) {
       <div>
         <h2>{t('regulatory', { ns: 'expertise' })}</h2>
         <ul className='grid gap-1 text-white'>
-          {regulatory.map((item, index) => {
+          {regulatory?.map((item, index) => {
             return (
               <li key={index} className='flex  border-primary group/link   hover:border-l hover:pl-2 transition-all relative'>
                 <Link href={`/expertise/${item.slug}`} key={index}>

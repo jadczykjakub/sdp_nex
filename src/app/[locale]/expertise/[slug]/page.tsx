@@ -10,6 +10,7 @@ import DecorationWrapper from '@/app/components/DecorationWrapper'
 import Image from 'next/image'
 import Link from 'next/link'
 import ArrowIcon from '@/../public/images/svg/arrow.svg'
+import { redirect } from 'next/navigation'
 
 export async function generateMetadata({
   params,
@@ -21,7 +22,7 @@ export async function generateMetadata({
   )
 
   if (!expertise) {
-    return notFound()
+    return redirect('/')
   }
 }
 
@@ -46,7 +47,7 @@ export default async function page({ params }: { params: any }) {
   )
 
   if (!expertise) {
-    return notFound()
+    return redirect('/')
   }
 
   return (
