@@ -55,6 +55,7 @@ export default async function page({ params }: { params: any }) {
               height="240"
               alt="dupa"
               objectFit="contain"
+              className='h-80 w-64 object-contain'
             />
           </DecorationWrapper>
           <div className="flex flex-col gap-2">

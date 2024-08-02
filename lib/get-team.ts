@@ -17,7 +17,8 @@ type Metadata = {
   education?: string
   profession1?: string
   profession2?: string
-  published: true
+  published: boolean
+  isBoss: boolean
 }
 
 export const getTeam = (locale: string) => {

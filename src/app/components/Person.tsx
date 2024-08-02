@@ -31,10 +31,10 @@ export default function Person({
           width={400}
           height={400}
           alt=""
-          className="group-hover:opacity-40 transition-opacity"
+          className="group-hover:opacity-40 transition-opacity max-h-96 object-cover object-top"
         />
-        <div className="absolute top-[50%] w-full group-hover:top-[20%]  transition-all">
-          <p className="font-bold text-sm md:text-3xl bg-black/55 py-8">
+        <div className="absolute top-[60%] w-full group-hover:top-[20%]  transition-all">
+          <p className="font-bold text-sm md:text-3xl bg-black/55 py-6">
             {name}
           </p>
         </div>

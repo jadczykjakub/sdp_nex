@@ -6,8 +6,10 @@ import LawScienceIcon from '@/../public/images/svg/science.svg'
 import HighestStandardsIcon from '@/../public/images/svg/questions.svg'
 import EffectiveWorkIcon from '@/../public/images/svg/accept-price.svg'
 import BusinessOrientationIcon from '@/../public/images/svg/handshake.svg'
+import aboutUsImage from '@/../public/images/about-us/about-us.jpg'
+import Image from 'next/image'
 
-const i18nNamespaces = ['common', 'about-us']
+const i18nNamespaces = ['about-us']
 
 const iconEnum: { [key: number]: JSX.Element } = {
   0: <LawScienceIcon className={'max-md:w-11 max-md:h-11'} />,
@@ -34,13 +36,13 @@ export default async function AboutUs({ params: { locale } }: any) {
       locale={locale}
       resources={resources}
     >
-      <main className='grid gap-12 md:gap-20'>
+      <main className="grid gap-12 md:gap-20">
         <DecorationWrapper theme="dark" type="single">
           <h1 className="text-3xl font-bold">
             {t('title', { ns: 'about-us' })}
           </h1>
         </DecorationWrapper>
-        <div className="grid md:grid-cols-[2fr_1fr]  gap-4">
+        <div className="grid md:grid-cols-[3fr_2fr]  gap-12">
           <div>
             {dataDescription.map((item: any, index: any) => {
               return (
@@ -50,12 +52,16 @@ export default async function AboutUs({ params: { locale } }: any) {
               )
             })}
           </div>
-          <div>image here</div>
+          <Image
+            src={aboutUsImage}
+            alt="about us image"
+            className="h-full object-cover rounded-lg"
+          />
         </div>
-        <div className='grid gap-4 justify-items-center'>
-          <DecorationWrapper theme="dark" type="single">
-            <h2 className="text-3xl font-bold">our priniples</h2>
-          </DecorationWrapper>
+        <DecorationWrapper theme="dark" type="single">
+          <h2 className="text-3xl font-bold">{t('principlesTitle')}</h2>
+        </DecorationWrapper>
+        <div className="grid gap-4 justify-items-center">
           <div className="grid gap-12  md:grid-cols-2 md:gap-24">
             {dataPrinciples.map((item: any, index: number) => {
               return (

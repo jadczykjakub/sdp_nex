@@ -4,6 +4,8 @@ import TranslationsProvider from '@/app/components/TranslationProvider'
 import DecorationWrapper from '@/app/components/DecorationWrapper'
 import PhoneIcon from '@/../public/images/svg/phone.svg'
 import EnvelopeIcon from '@/../public/images/svg/envelope.svg'
+import bgImage from '@/../public/images/contact/bg-contact.png'
+import Image from 'next/image'
 
 const i18nNamespaces = ['common', 'contact']
 
@@ -22,23 +24,26 @@ export default async function Contact({ params: { locale } }: any) {
             {t('title', { ns: 'contact' })}
           </h1>
         </DecorationWrapper>
-        <div className="flex items-center gap-4 group">
-          <EnvelopeIcon className="group-hover:fill-primary" />
-          <a
-            href={t('email.href', { ns: 'contact' })}
-            className="group-hover:text-primary"
-          >
-            {t('email.text', { ns: 'contact' })}
-          </a>
-        </div>
-        <div className="flex items-center gap-4 group">
-          <PhoneIcon className="group-hover:fill-primary" />
-          <a
-            href={t('phone.href', { ns: 'contact' })}
-            className="group-hover:text-primary"
-          >
-            {t('phone.text', { ns: 'contact' })}
-          </a>
+        <div className='grid gap-4 justify-items-center'>
+          <div className="flex items-center gap-4 group " >
+            <EnvelopeIcon className="group-hover:fill-primary" />
+            <a
+              href={t('email.href', { ns: 'contact' })}
+              className="group-hover:text-primary"
+            >
+              {t('email.text', { ns: 'contact' })}
+            </a>
+          </div>
+          <div className="flex items-center gap-4 group">
+            <PhoneIcon className="group-hover:fill-primary" />
+            <a
+              href={t('phone.href', { ns: 'contact' })}
+              className="group-hover:text-primary"
+            >
+              {t('phone.text', { ns: 'contact' })}
+            </a>
+          </div>
+          <Image src={bgImage} alt='contact sdp legal' className="-mt-12 md:-mt-28 -z-10"  />
         </div>
       </main>
     </TranslationsProvider>
