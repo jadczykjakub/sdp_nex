@@ -36,6 +36,7 @@ export const getTeam = (locale: string) => {
       metadata: data as Partial<Metadata>,
       content,
       slug: post.replace(/\.mdx?$/, ''),
+      locale
     }
   })
 }

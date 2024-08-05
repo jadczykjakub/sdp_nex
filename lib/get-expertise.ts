@@ -36,6 +36,7 @@ export const getExpertise = (locale: string) => {
       metadata: data as Partial<Metadata>,
       content,
       slug: item.replace(/\.mdx?$/, ''),
+      locale
     }
   })
 }

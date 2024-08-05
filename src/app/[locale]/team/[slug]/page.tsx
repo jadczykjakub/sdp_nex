@@ -9,6 +9,19 @@ import Image from 'next/image'
 import DecorationWrapper from '@/app/components/DecorationWrapper'
 import LinkedinIcon from '@/../public/images/svg/linkedin.svg'
 import EmailIcon from '@/../public/images/svg/envelope.svg'
+import i18nConfig from '@/app/i18n/i18n.config'
+
+export function generateStaticParams() {
+
+  let team: { locale: string; slug: string }[] = [];
+
+  i18nConfig.locales.map((item) => {
+    team = [...getTeam(item)];
+  })
+
+  return team.map((item) => ({locale: item.locale, slug: item.slug}))
+}
+
 
 export async function generateMetadata({
   params,

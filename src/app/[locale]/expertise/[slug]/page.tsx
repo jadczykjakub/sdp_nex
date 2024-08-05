@@ -11,6 +11,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ArrowIcon from '@/../public/images/svg/arrow.svg'
 import { redirect } from 'next/navigation'
+import i18nConfig from '@/app/i18n/i18n.config'
+
+
+export function generateStaticParams() {
+
+  let expertises: { locale: string; slug: string }[] = [];
+
+  i18nConfig.locales.map((item) => {
+    expertises = [...getExpertise(item)];
+  })
+
+  return expertises.map((item) => ({locale: item.locale, slug: item.slug}))
+}
 
 export async function generateMetadata({
   params,
