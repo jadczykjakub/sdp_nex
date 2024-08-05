@@ -62,7 +62,8 @@ const mdxComponents: MDXComponents = {
   h3: ({ className, ...props }) => (
     <h3
       className={cn(
-        className
+        className,
+        'font-bold text-xl mb-4'
       )}
       {...props}
     >

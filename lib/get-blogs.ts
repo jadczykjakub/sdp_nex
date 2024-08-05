@@ -36,3 +36,20 @@ export const getBlogs = (locale: string) => {
     }
   })
 }
+
+export function getLatestBlogs(locale: string) {
+  let blogs = getBlogs(locale);
+  blogs = blogs.filter(
+    (blog) => blog.metadata && blog.metadata.published === true,
+  );
+
+  // Sort by date
+  const allBlogs = blogs.sort((a, b) => {
+    const dateA = new Date(a.metadata.publishedAt!);
+    const dateB = new Date(b.metadata.publishedAt!);
+    return dateB.getTime() - dateA.getTime();
+  });
+
+  // Return the latest 3 blogs
+  return allBlogs.slice(0, 3);
+}

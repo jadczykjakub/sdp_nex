@@ -44,38 +44,38 @@ export default async function page({ params }: { params: any }) {
             <h1 className="text-4xl font-bold">{t('title')}</h1>
           </DecorationWrapper>
         </div>
-        <div className="flex flex-col md:flex-row justify-center gap-4">
-          {bossTeam.map((item, index) => {
-            return (
-              <Person
-                href={`/team/${item.slug}`}
-                key={index}
-                education={item.metadata.education}
-                profession1={item.metadata.profession1}
-                profession2={item.metadata.profession2}
-                imgSrc={item.metadata.imageListSource}
-                name={item.metadata.title}
+        <div className='grid gap-y-16'>
+          <div className="flex flex-col md:flex-row justify-center gap-4">
+            {bossTeam.map((item, index) => {
+              return (
+                <Person
+                  href={`/team/${item.slug}`}
+                  key={index}
+                  education={item.metadata.education}
+                  profession1={item.metadata.profession1}
+                  profession2={item.metadata.profession2}
+                  imgSrc={item.metadata.imageListSource}
+                  name={item.metadata.title}
+                />
+              )
+            })}
+          </div>
 
-              />
-            )
-          })}
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-y-16">
-          {workerTeam.map((item, index) => {
-            return (
-              <Person
-              href={`/team/${item.slug}`}
-              key={index}
-              education={item.metadata.education}
-              profession1={item.metadata.profession1}
-              profession2={item.metadata.profession2}
-              imgSrc={item.metadata.imageListSource}
-              name={item.metadata.title}
-
-            />
-            )
-          })}
+          <div className="grid md:grid-cols-3 gap-y-16">
+            {workerTeam.map((item, index) => {
+              return (
+                <Person
+                  href={`/team/${item.slug}`}
+                  key={index}
+                  education={item.metadata.education}
+                  profession1={item.metadata.profession1}
+                  profession2={item.metadata.profession2}
+                  imgSrc={item.metadata.imageListSource}
+                  name={item.metadata.title}
+                />
+              )
+            })}
+          </div>
         </div>
       </main>
     </TranslationsProvider>

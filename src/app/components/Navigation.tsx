@@ -34,58 +34,60 @@ export default function Navigation({
             height={60}
           />
         </Link>
-        <div className="max-md:hidden flex gap-16 h-full ">
-          <nav className="hidden md:block h-full ">
-            <ul className="flex gap-8 font-extralight h-full ">
-              <li className="hover:text-primary relative  group">
-                <Link
-                  href={t('expertise.href', { ns: 'navigation' })}
-                  className="flex gap-1 items-center h-full"
-                >
-                  {t('expertise.title', { ns: 'navigation' })}
-                  <Chevron
-                    className={` group-hover:-rotate-90 rotate-90 transition-transform`}
-                  />{' '}
-                </Link>
-                <div className="hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:grid w-[700px]  border border-primary bg-black rounded-3xl p-7  triangleprimary  ">
-                  {children}
-                </div>
-              </li>
-              <li className="hover:text-primary flex ">
-                <Link
-                  href={t('news.href', { ns: 'navigation' })}
-                  className="h-full flex items-center"
-                >
-                  {t('news.title', { ns: 'navigation' })}
-                </Link>
-              </li>
-              <li className="hover:text-primary flex">
-                <Link
-                  href={t('team.href', { ns: 'navigation' })}
-                  className="h-full flex items-center"
-                >
-                  {t('team.title', { ns: 'navigation' })}
-                </Link>
-              </li>
-              <li className="hover:text-primary flex">
-                <Link
-                  href={t('about-us.href', { ns: 'navigation' })}
-                  className="h-full flex items-center"
-                >
-                  {t('about-us.title', { ns: 'navigation' })}
-                </Link>
-              </li>
-              <li className="hover:text-primary flex">
-                <Link
-                  href={t('contact.href', { ns: 'navigation' })}
-                  className="h-full flex items-center"
-                >
-                  {t('contact.title', { ns: 'navigation' })}
-                </Link>
-              </li>
-            </ul>
-          </nav>
-          <LanguageSwitcher />
+        <div className="hidden md:block ">
+          <div className=" flex h-full  gap-16 mr-4">
+            <nav className=" md:block h-full ">
+              <ul className="flex gap-8 font-extralight h-full ">
+                <li className="hover:text-primary relative  group">
+                  <Link
+                    href={t('expertise.href', { ns: 'navigation' })}
+                    className="flex gap-1 items-center h-full"
+                  >
+                    {t('expertise.title', { ns: 'navigation' })}
+                    <Chevron
+                      className={` group-hover:-rotate-90 rotate-90 transition-transform`}
+                    />{' '}
+                  </Link>
+                  <div className="hidden absolute top-[140%] left-1/2 -translate-x-1/2 group-hover:grid w-[700px]  border border-primary bg-black rounded-3xl p-7  triangleprimary  ">
+                    {children}
+                  </div>
+                </li>
+                <li className="hover:text-primary flex ">
+                  <Link
+                    href={t('news.href', { ns: 'navigation' })}
+                    className="h-full flex items-center"
+                  >
+                    {t('news.title', { ns: 'navigation' })}
+                  </Link>
+                </li>
+                <li className="hover:text-primary flex">
+                  <Link
+                    href={t('team.href', { ns: 'navigation' })}
+                    className="h-full flex items-center"
+                  >
+                    {t('team.title', { ns: 'navigation' })}
+                  </Link>
+                </li>
+                <li className="hover:text-primary flex">
+                  <Link
+                    href={t('about-us.href', { ns: 'navigation' })}
+                    className="h-full flex items-center"
+                  >
+                    {t('about-us.title', { ns: 'navigation' })}
+                  </Link>
+                </li>
+                <li className="hover:text-primary flex">
+                  <Link
+                    href={t('contact.href', { ns: 'navigation' })}
+                    className="h-full flex items-center"
+                  >
+                    {t('contact.title', { ns: 'navigation' })}
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+            <LanguageSwitcher />
+          </div>
         </div>
 
         <div className="md:hidden ">
@@ -97,52 +99,59 @@ export default function Navigation({
               }
             )}
           >
-            <ul className="flex flex-col gap-8 font-extralight h-full items-center ">
-              <li className="hover:text-primary ">
-                <Link
-                  href={t('expertise.href', { ns: 'navigation' })}
-                  className="flex gap-1 items-center h-full "
-                >
-                  {t('expertise.title', { ns: 'navigation' })}
-                </Link>
-                <div className="hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:block w-80 h-80 bg-primary  "></div>
-              </li>
-              <li className="hover:text-primary flex ">
-                <Link
-                  href={t('news.href', { ns: 'navigation' })}
-                  className="h-full flex items-center"
-                >
-                  {t('news.title', { ns: 'navigation' })}
-                </Link>
-              </li>
-              <li className="hover:text-primary flex">
-                <Link
-                  href={t('team.href', { ns: 'navigation' })}
-                  className="h-full flex items-center"
-                >
-                  {t('team.title', { ns: 'navigation' })}
-                </Link>
-              </li>
-              <li className="hover:text-primary flex">
-                <Link
-                  href={t('about-us.href', { ns: 'navigation' })}
-                  className="h-full flex items-center"
-                >
-                  {t('about-us.title', { ns: 'navigation' })}
-                </Link>
-              </li>
-              <li className="hover:text-primary flex">
-                <Link
-                  href={t('contact.href', { ns: 'navigation' })}
-                  className="h-full flex items-center"
-                >
-                  {t('contact.title', { ns: 'navigation' })}
-                </Link>
-              </li>
-            </ul>
-            <LanguageSwitcher />
+            <div className=" grid gap-16 justify-items-center">
+              <ul className="flex flex-col gap-8 font-extralight  items-center ">
+                <li className="hover:text-primary ">
+                  <Link
+                    href={t('expertise.href', { ns: 'navigation' })}
+                    className="flex gap-1 items-center h-full "
+                    onClick={() => handleHamburger(false)}
+                  >
+                    {t('expertise.title', { ns: 'navigation' })}
+                  </Link>
+                  <div className="hidden absolute top-full left-1/2 -translate-x-1/2 group-hover:block w-80 h-80 bg-primary  "></div>
+                </li>
+                <li className="hover:text-primary flex ">
+                  <Link
+                    href={t('news.href', { ns: 'navigation' })}
+                    className="h-full flex items-center"
+                    onClick={() => handleHamburger(false)}
+                  >
+                    {t('news.title', { ns: 'navigation' })}
+                  </Link>
+                </li>
+                <li className="hover:text-primary flex">
+                  <Link
+                    href={t('team.href', { ns: 'navigation' })}
+                    className="h-full flex items-center"
+                    onClick={() => handleHamburger(false)}
+                  >
+                    {t('team.title', { ns: 'navigation' })}
+                  </Link>
+                </li>
+                <li className="hover:text-primary flex">
+                  <Link
+                    href={t('about-us.href', { ns: 'navigation' })}
+                    className="h-full flex items-center"
+                    onClick={() => handleHamburger(false)}
+                  >
+                    {t('about-us.title', { ns: 'navigation' })}
+                  </Link>
+                </li>
+                <li className="hover:text-primary flex">
+                  <Link
+                    href={t('contact.href', { ns: 'navigation' })}
+                    className="h-full flex items-center"
+                    onClick={() => handleHamburger(false)}
+                  >
+                    {t('contact.title', { ns: 'navigation' })}
+                  </Link>
+                </li>
+              </ul>
+              <LanguageSwitcher />
+            </div>
           </nav>
-          <Hamburger onToggle={handleHamburger} />
+          <Hamburger onToggle={handleHamburger} toggled={isNavOpen} />
         </div>
       </div>
     </>

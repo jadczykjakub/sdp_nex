@@ -66,7 +66,7 @@ export default async function page({ params }: { params: any }) {
           <div>
             <div className="flex justify-center mb-8 font-bold text-3xl">
               <DecorationWrapper theme="dark" type="single">
-                <h4 className="text-center">Perosna jaka</h4>
+                <h4 className="text-center">{t('contactTitle')}</h4>
               </DecorationWrapper>
             </div>
             <Link
@@ -77,8 +77,8 @@ export default async function page({ params }: { params: any }) {
                 src={`/${contactPerson?.metadata.imageProfileSource}`}
                 width="140"
                 height="140"
-                alt="dupa"
-                className="w-36 h-36 object-cover rounded-full"
+                alt={`${contactPerson?.metadata.title}`}
+                className="w-36 h-36 object-cover object-top rounded-full"
               />
               <p className="font-bold text-xl text-center">
                 {contactPerson?.metadata.title}
@@ -87,12 +87,12 @@ export default async function page({ params }: { params: any }) {
                 {contactPerson?.metadata.profession1}
               </p>
               <p className=" group-hover:opacity-100  opacity-90 bg-primary rounded-lg  p-2 font-extralight">
-                Zobacz profil
+                {t('contactButton')}
               </p>
             </Link>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="hidden md:justify-between md:flex ">
           <div>
             <DecorationWrapper
               theme="bright"

@@ -1,18 +1,19 @@
 import initTranslations from '@/app/i18n/i18n'
-import ClientComponent from '@/app/components/clientComponent'
 import TranslationsProvider from '../components/TranslationProvider'
-import LanguageSwitcher from '../components/LanguageSwitcher'
-import { cn } from '../helpers/cn'
 import Hero from '../components/Hero'
 import Recommendation from '../components/Recommendation'
 import WeHelpClients from '../components/WeHelpClients'
+import { getLatestBlogs } from '../../../lib/get-blogs'
+import SingleNews from '../components/SingleNews'
+import DecorationWrapper from '../components/DecorationWrapper'
+import Link from 'next/link'
 
-const i18nNamespaces = ['common', 'home']
+const i18nNamespaces = ['common', 'home', 'news']
 
 export default async function Home({ params: { locale } }: any) {
   const { t, resources } = await initTranslations(locale, i18nNamespaces)
 
-  // console.log(resources?.[locale].home.recommendations);
+  const lastBlogs = getLatestBlogs(locale)
 
   return (
     <TranslationsProvider
@@ -20,10 +21,31 @@ export default async function Home({ params: { locale } }: any) {
       locale={locale}
       resources={resources}
     >
-      <main className='grid gap-16 md:gap-20'>
+      <main className="grid gap-16 md:gap-20">
         <Hero lang={locale} />
-        <Recommendation  lang={locale} />
+        <Recommendation lang={locale} />
         <WeHelpClients lang={locale} />
+        <DecorationWrapper theme="bright" type="single">
+          <h3 className="text-2xl font-bold">{t('title', { ns: 'news' })}</h3>
+        </DecorationWrapper>
+        <div className="grid md:grid-cols-3 gap-16 md:gap-4">
+          {lastBlogs.map((item, index) => {
+            return (
+              <SingleNews
+                imgSource={item.metadata.imageSource as string}
+                slug={item.slug}
+                title={item.metadata.title as string}
+                key={index}
+              />
+            )
+          })}
+        </div>
+        <div className="flex justify-center">
+          <Link href={'/news'} className="button">
+            {' '}
+            {t('button', { ns: 'news' })}{' '}
+          </Link>
+        </div>
       </main>
     </TranslationsProvider>
   )

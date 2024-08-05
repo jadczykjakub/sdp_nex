@@ -13,7 +13,7 @@ export default async function ExpertiseWideMenu({ lang }: { lang: string }) {
   return (
     <div className="grid grid-cols-3 gap-8">
       <div>
-        <h2>{t('dispute', { ns: 'expertise' })}</h2>
+        <h2 className='text-2xl mb-2'>{t('dispute', { ns: 'expertise' })}</h2>
         <ul className='grid gap-1 text-white'>
           {dispute?.map((item, index) => {
             return (
@@ -28,7 +28,7 @@ export default async function ExpertiseWideMenu({ lang }: { lang: string }) {
         </ul>
       </div>
       <div>
-        <h2>{t('protect', { ns: 'expertise' })}</h2>
+        <h2 className='text-2xl mb-2'>{t('protect', { ns: 'expertise' })}</h2>
         <ul className='grid gap-1 text-white'>
           {protect?.map((item, index) => {
             return (
@@ -43,7 +43,7 @@ export default async function ExpertiseWideMenu({ lang }: { lang: string }) {
         </ul>
       </div>
       <div>
-        <h2>{t('regulatory', { ns: 'expertise' })}</h2>
+        <h2 className='text-2xl mb-2'>{t('regulatory', { ns: 'expertise' })}</h2>
         <ul className='grid gap-1 text-white'>
           {regulatory?.map((item, index) => {
             return (

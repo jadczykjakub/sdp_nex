@@ -52,7 +52,7 @@ export default async function page({ params }: { params: any }) {
             src={`/${blog.metadata.imageSource}`}
             width="800"
             height="200"
-            alt="dupa"
+            alt={`${blog?.metadata.title}`}
             objectFit="contain"
           />
         </div>

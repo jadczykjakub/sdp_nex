@@ -53,7 +53,7 @@ export default async function page({ params }: { params: any }) {
               src={`/${profile.metadata.imageProfileSource}`}
               width="350"
               height="240"
-              alt="dupa"
+              alt={`${profile?.metadata.title}`}
               objectFit="contain"
               className='h-80 w-64 object-contain'
             />
