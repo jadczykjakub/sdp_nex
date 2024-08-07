@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const i18nNamespaces = ['common', 'navigation', 'footer']
 
 export function generateStaticParams() {
-  return i18nConfig.locales.map((locale) => ({ locale }))
+  return i18nConfig.locales.filter((item) => item !== i18nConfig.defaultLocale).map((locale) => ({ locale }))
 }
 
 export default async function RootLayout({
