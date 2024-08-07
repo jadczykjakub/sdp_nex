@@ -39,7 +39,7 @@ export async function NewsSlugPage({ locale, slug }: TNewsSlugPage) {
             <CustomMDX>{blog.content}</CustomMDX>
           </article>
           <Image
-            src={`/${blog.metadata.imageSource}`}
+            src={`/sdp_nex/${blog.metadata.imageSource}`}
             width="800"
             height="200"
             alt={`${blog?.metadata.title}`}
