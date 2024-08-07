@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import { notFound } from 'next/navigation'
 import { getExpertise } from '@/../lib/get-expertise'
@@ -68,7 +66,7 @@ export async function ExpertiseSlugPage({locale, slug}: TExpertiseSlugPage) {
                 className="group grid gap-2 justify-items-center px-7 py-5 rounded-xl border-2 border-secondary"
               >
                 <Image
-                  src={`./${contactPerson?.metadata.imageProfileSource}`}
+                  src={`/${contactPerson?.metadata.imageProfileSource}`}
                   width="140"
                   height="140"
                   alt={`${contactPerson?.metadata.title}`}
