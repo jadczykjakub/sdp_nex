@@ -36,7 +36,7 @@ export async function HomePage({ locale }: THomePage) {
           {lastBlogs.map((item, index) => {
             return (
               <SingleNews
-                imgSource={item.metadata.imageSource as string}
+                imgSource={`${item.metadata.imageSource}`}
                 slug={item.slug}
                 title={item.metadata.title as string}
                 key={index}

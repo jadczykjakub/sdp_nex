@@ -20,7 +20,7 @@ export default function SingleNews({slug, imgSource, title}: TSingleNews ) {
     <Link href={`/news/${slug}`}  className="group grid gap-4">
       <div className="overflow-hidden">
         <Image
-          src={`/${imgSource}`}
+          src={`./${imgSource}`}
           width="400"
           height="320"
           alt={`${title}`}
