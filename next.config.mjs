@@ -13,7 +13,8 @@ const nextConfig = {
 
     return config
   },
-  basePath: '/sdp_nex'
+  basePath: '/sdp_nex',
+  assetPrefix: '/sdp_nex/',
 }
 
 export default nextConfig
