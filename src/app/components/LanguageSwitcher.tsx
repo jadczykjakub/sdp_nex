@@ -27,7 +27,8 @@ export default function LanguageSwitcher() {
     if (currentLocale === i18nConfig.defaultLocale) {
       router.push('/' + newLocale + currentPathname)
     } else {
-      router.push(currentPathname.replace(`/${currentLocale}`, `/${newLocale}`))
+      console.log(currentPathname, "-------------------------------")
+      router.push(currentPathname.replace(`/${currentLocale}`, ``))
     }
 
     router.refresh()
