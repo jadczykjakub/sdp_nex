@@ -10,6 +10,7 @@ const nextConfig = {
 
     return config
   },
+  basePath: '/sdp_nex'
 }
 
 export default nextConfig
