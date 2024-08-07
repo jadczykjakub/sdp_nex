@@ -27,7 +27,7 @@ export default function Person({
     <Link href={`${href}`} className="group">
       <div className="text-center relative overflow-hidden flex justify-center">
         <Image
-          src={`/${imgSrc}`}
+          src={`./${imgSrc}`}
           width={400}
           height={400}
           alt=""
