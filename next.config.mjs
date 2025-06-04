@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/sdp_nex',
-  output: 'export',
+  // basePath: '/sdp_nex',
+  // output: 'export',
+  output: 'export', // Enables exporting as static HTML
+  reactStrictMode: true, // Optional: Strict mode for React
+  trailingSlash: true, // Adds trailing slashes to paths for compatibility
   images: {
-    unoptimized: true,
+    unoptimized: true, // Necessary for static export if using Next.js <Image>
   },
   transpilePackages: ['next-mdx-remote'],
   webpack(config) {

@@ -2,5 +2,6 @@
     "prettier.singleQuote": true,
     "prettier.enable": true,
     "editor.formatOnSave": false,
-    "eslint.enable": true
+    "eslint.enable": true,
+    "liveServer.settings.port": 5501
 }

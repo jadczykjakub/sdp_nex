@@ -32,14 +32,14 @@ export async function NewsSlugPage({ locale, slug }: TNewsSlugPage) {
     >
       <main className="grid justify-items-center gap-12 md:gap-20">
         <DecorationWrapper type="single" theme="dark">
-          <h1 className="text-3xl font-bold">{blog.metadata.title}</h1>
+          <h1 className="text-4xl font-bold">{blog.metadata.title}</h1>
         </DecorationWrapper>
         <div className="grid md:grid-cols-[2fr_1fr]  gap-4">
           <article className="">
             <CustomMDX>{blog.content}</CustomMDX>
           </article>
           <Image
-            src={`/sdp_nex/${blog.metadata.imageSource}`}
+            src={`/${blog.metadata.imageSource}`}
             width="800"
             height="200"
             alt={`${blog?.metadata.title}`}

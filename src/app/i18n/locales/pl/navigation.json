@@ -1,22 +1,25 @@
 {
+    "home": {
+        "href": "/pl"
+    },
     "expertise": {
-        "title": "Expertise",
-        "href": "/expertise"
+        "title": "Usługi",
+        "href": "/pl/expertise"
     },
     "news": {
-        "title": "News",
-        "href": "/news"
+        "title": "Aktualności",
+        "href": "/pl/news"
     },
-    "people": {
-        "title": "People",
-        "href": "/people"
+    "team": {
+        "title": "Zespół",
+        "href": "/pl/team"
     },
     "about-us": {
-        "title": "About us",
-        "href": "/about-us"
+        "title": "O nas",
+        "href": "/pl/about-us"
     },
     "contact": {
-        "title": "Contact",
-        "href": "/contact"
+        "title": "Kontakt",
+        "href": "/pl/contact"
     }   
 }

@@ -26,7 +26,7 @@ export default function Navigation({
     <>
       <div className="h-20 px-4 md:px8"></div>
       <div className="flex justify-between items-center bg-black border-b-2 border-secondary h-20 px-4 md:px8 fixed w-full top-0 z-50">
-        <Link href={'/'}>
+        <Link href={t('home.href', { ns: 'navigation' })}>
           <Image
             src={headerLogoImage}
             alt="sdp logo navigation"
@@ -48,8 +48,10 @@ export default function Navigation({
                       className={` group-hover:-rotate-90 rotate-90 transition-transform`}
                     />{' '}
                   </Link>
-                  <div className="hidden absolute top-[140%] left-1/2 -translate-x-1/2 group-hover:grid w-[700px]  border border-primary bg-black rounded-3xl p-7  triangleprimary  ">
+                  <div className="hidden absolute top-[86%] left-1/2 -translate-x-1/2 group-hover:grid w-[700px] p-4  ">
+                  <div className='border border-primary bg-black rounded-3xl p-7   '>
                     {children}
+                  </div>
                   </div>
                 </li>
                 <li className="hover:text-primary flex ">

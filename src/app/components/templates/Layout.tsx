@@ -28,7 +28,7 @@ export default async function Layout({
   const { t, resources } = await initTranslations(locale, i18nNamespaces)
 
   return (
-    <html lang={'en'} dir={dir('rtl')}>
+    <html lang={locale} dir={dir('rtl')}>
       <body className={poppins.className}>
         <div className="mx-auto max-w-10xl ">
           <TranslationsProvider
@@ -40,7 +40,7 @@ export default async function Layout({
               <ExpertiseWideMenu lang={locale} />
             </Navigation>
             <div className="my-4 px-4 md:px8 max-w-7xl mx-auto">{children}</div>
-            <Footer />
+            <Footer lang={locale}/>
           </TranslationsProvider>
         </div>
       </body>

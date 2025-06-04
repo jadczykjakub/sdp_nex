@@ -40,7 +40,7 @@ export async function TeamSlugPage({ locale, slug }: TTeamSlugPage) {
             classFromProps={'pb-0'}
           >
             <Image
-              src={`./${profile.metadata.imageProfileSource}`}
+              src={`/${profile.metadata.imageProfileSource}`}
               width="350"
               height="240"
               alt={`${profile?.metadata.title}`}

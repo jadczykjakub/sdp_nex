@@ -2,9 +2,9 @@ import FooterBottom from "./FooterBottom";
 import FooterMiddle from "./FooterMiddle";
 import FooterTop from "./FooterTop";
 
-const Footer = () => {
+const Footer = ({lang}: {lang: string}) => {
     return <div>
-        <FooterTop />
+        <FooterTop lang={lang}/>
         <FooterMiddle />
         <FooterBottom />
     </div>;

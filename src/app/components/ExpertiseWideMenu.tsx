@@ -18,7 +18,7 @@ export default async function ExpertiseWideMenu({ lang }: { lang: string }) {
           {dispute?.map((item, index) => {
             return (
               <li key={index} className='flex  border-primary group/link   hover:border-l hover:pl-2 transition-all relative overflow-hidden'>
-                <Link href={`/expertise/${item.slug}`} key={index}>
+                <Link href={lang === "en" ? `/expertise/${item.slug}` : `/${lang}/expertise/${item.slug}`} key={index}>
                   {item.metadata.title}
                   <Chevron className="fill-primary absolute scale-0 group-hover/link:scale-100 -right-4 top-1/2 -translate-y-1/2 transition-transform" />
                 </Link>
@@ -33,7 +33,7 @@ export default async function ExpertiseWideMenu({ lang }: { lang: string }) {
           {protect?.map((item, index) => {
             return (
               <li key={index} className='flex  border-primary group/link   hover:border-l hover:pl-2 transition-all relative overflow-hidden'>
-                <Link href={`/expertise/${item.slug}`} key={index}>
+                <Link href={lang === "en" ? `/expertise/${item.slug}` : `/${lang}/expertise/${item.slug}`} key={index}>
                   {item.metadata.title}
                   <Chevron className="fill-primary absolute scale-0 group-hover/link:scale-100 -right-4 top-1/2 -translate-y-1/2 transition-transform" />
                 </Link>
@@ -48,7 +48,7 @@ export default async function ExpertiseWideMenu({ lang }: { lang: string }) {
           {regulatory?.map((item, index) => {
             return (
               <li key={index} className='flex  border-primary group/link   hover:border-l hover:pl-2 transition-all relative'>
-                <Link href={`/expertise/${item.slug}`} key={index}>
+                <Link href={lang === "en" ? `/expertise/${item.slug}` : `/${lang}/expertise/${item.slug}`} key={index}>
                   {item.metadata.title}
                   <Chevron className="fill-primary absolute scale-0 group-hover/link:scale-100 -right-4 top-1/2 -translate-y-1/2 transition-transform" />
                 </Link>

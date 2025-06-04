@@ -33,7 +33,7 @@ export  async function ExpertisePage({locale}: TExpertisePage) {
                 {dispute.map((item, index) => {
                   return (
                     <li key={index} className=' group border-t-2 border-t-primary rounded-xl hover:bg-primary py-3'>
-                      <Link href={`/expertise/${item.slug}`} className='block group-hover:translate-x-1 transition-transform' >
+                      <Link href={locale !== "en" ? `/${locale}/expertise/${item.slug}` : `/expertise/${item.slug}`} className='block group-hover:translate-x-1 transition-transform' >
                         <span className='text-xl font-extralight '>{item.metadata.title}</span>
                       </Link>
                     </li>
@@ -49,7 +49,7 @@ export  async function ExpertisePage({locale}: TExpertisePage) {
                 {protect.map((item, index) => {
                   return (
                     <li key={index} className=' group border-t-2 border-t-primary rounded-xl hover:bg-primary py-3'>
-                      <Link href={`/expertise/${item.slug}`} className='block group-hover:translate-x-1 transition-transform' >
+                      <Link href={locale !== "en" ? `/${locale}/expertise/${item.slug}` : `/expertise/${item.slug}`} className='block group-hover:translate-x-1 transition-transform' >
                         <span className='text-xl font-extralight '>{item.metadata.title}</span>
                       </Link>
                     </li>
@@ -65,7 +65,7 @@ export  async function ExpertisePage({locale}: TExpertisePage) {
                 {regulatory.map((item, index) => {
                   return (
                     <li key={index} className=' group border-t-2 border-t-primary rounded-xl hover:bg-primary py-3'>
-                      <Link href={`/expertise/${item.slug}`} className='block group-hover:translate-x-1 transition-transform' >
+                      <Link href={`${item.slug}`} className='block group-hover:translate-x-1 transition-transform' >
                         <span className='text-xl font-extralight '>{item.metadata.title}</span>
                       </Link>
                     </li>

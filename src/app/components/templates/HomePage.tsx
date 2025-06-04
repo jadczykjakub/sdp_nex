@@ -37,7 +37,7 @@ export async function HomePage({ locale }: THomePage) {
             return (
               <SingleNews
                 imgSource={`${item.metadata.imageSource}`}
-                slug={item.slug}
+                slug={`news/${item.slug}`}
                 title={item.metadata.title as string}
                 key={index}
               />
@@ -45,7 +45,7 @@ export async function HomePage({ locale }: THomePage) {
           })}
         </div>
         <div className="flex justify-center">
-          <Link href={'/news'} className="button">
+          <Link href={'news'} className="button">
             {' '}
             {t('button', { ns: 'news' })}{' '}
           </Link>

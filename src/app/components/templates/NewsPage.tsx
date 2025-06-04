@@ -31,14 +31,14 @@ export async function NewsPage({ locale }: TNewsPage) {
     >
       <main className="grid justify-items-center gap-12 md:gap-20">
         <DecorationWrapper theme="dark" type="single">
-          <h1 className="text-3xl font-bold">{t('title')}</h1>
+          <h1 className="text-4xl font-bold">{t('title')}</h1>
         </DecorationWrapper>
-        <div className="grid grid-cols-3 gap-20">
+        <div className="grid gap-8 md:grid-cols-3 md:gap-20">
           {allBlogs.map((item, index) => {
             return (
               <SingleNews
                 imgSource={item.metadata.imageSource as string}
-                slug={item.slug}
+                slug={`${item.slug}`}
                 title={item.metadata.title as string}
                 key={index}
               />

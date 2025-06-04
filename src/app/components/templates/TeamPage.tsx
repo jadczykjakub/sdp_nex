@@ -22,14 +22,14 @@ export async function TeamPage({ locale }: TTeamPage) {
   let bossTeam = allTeam.filter((item) => item.metadata.isBoss)
 
   bossTeam = bossTeam.sort((a, b) => {
-    const dateA = new Date(a.metadata.publishedAt!)
-    const dateB = new Date(b.metadata.publishedAt!)
+    const dateA = new Date(b.metadata.publishedAt!)
+    const dateB = new Date(a.metadata.publishedAt!)
     return dateB.getTime() - dateA.getTime()
   })
 
   workerTeam = workerTeam.sort((a, b) => {
-    const dateA = new Date(a.metadata.publishedAt!)
-    const dateB = new Date(b.metadata.publishedAt!)
+    const dateA = new Date(b.metadata.publishedAt!)
+    const dateB = new Date(a.metadata.publishedAt!)
     return dateB.getTime() - dateA.getTime()
   })
 
@@ -46,11 +46,11 @@ export async function TeamPage({ locale }: TTeamPage) {
           </DecorationWrapper>
         </div>
         <div className="grid gap-y-16">
-          <div className="flex flex-col md:flex-row justify-center gap-4">
+          <div className="flex flex-col md:flex-row justify-center gap-8 flex-wrap">
             {bossTeam.map((item, index) => {
               return (
                 <Person
-                  href={`/team/${item.slug}`}
+                  href={`${item.slug}`}
                   key={index}
                   education={item.metadata.education}
                   profession1={item.metadata.profession1}
@@ -66,7 +66,7 @@ export async function TeamPage({ locale }: TTeamPage) {
             {workerTeam.map((item, index) => {
               return (
                 <Person
-                  href={`/team/${item.slug}`}
+                  href={`${item.slug}`}
                   key={index}
                   education={item.metadata.education}
                   profession1={item.metadata.profession1}

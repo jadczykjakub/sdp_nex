@@ -1,8 +1,8 @@
 {
     "top": {
         "default_page": {
-            "title": "Skontaktuj się z nami",
-            "button": "Kontakt",
+            "title": "Get in touch",
+            "button": "Contact",
             "url": "/contact"
         },
         "contact_page": {

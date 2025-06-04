@@ -41,7 +41,7 @@ export async function AboutUsPage({locale}: TAboutUs ) {
     >
       <main className="grid gap-12 md:gap-20">
         <DecorationWrapper theme="dark" type="single">
-          <h1 className="text-3xl font-bold">
+          <h1 className="text-4xl font-bold">
             {t('title', { ns: 'about-us' })}
           </h1>
         </DecorationWrapper>

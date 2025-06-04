@@ -17,10 +17,10 @@ type TSingleNews = {
 export default function SingleNews({slug, imgSource, title}: TSingleNews ) {
     const { t } = useTranslation();
   return (
-    <Link href={`/news/${slug}`}  className="group grid gap-4">
+    <Link href={`${slug}`}  className="group grid gap-4">
       <div className="overflow-hidden">
         <Image
-          src={`./${imgSource}`}
+          src={`/${imgSource}`}
           width="400"
           height="320"
           alt={`${title}`}

@@ -1,4 +1,8 @@
+
 {
+    "home": {
+        "href": "/"
+    },
     "expertise": {
         "title": "Expertise",
         "href": "/expertise"
@@ -8,7 +12,7 @@
         "href": "/news"
     },
     "team": {
-        "title": "Zespół",
+        "title": "Team",
         "href": "/team"
     },
     "about-us": {

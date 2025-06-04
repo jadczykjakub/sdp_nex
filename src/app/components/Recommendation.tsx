@@ -21,7 +21,7 @@ export default async function Recommendation({ lang }: any) {
         <RecommendatoinIcon />
         <h3 className="text-3xl font-bold text-center">{t("recommendationTitle" )}</h3>
       </DecorationWrapper>
-      <ul className="flex gap-4">
+      <ul className="flex gap-4 flex-wrap">
         {data.map((item: any, index: any) => {
           return (
             <ListElement key={index}>

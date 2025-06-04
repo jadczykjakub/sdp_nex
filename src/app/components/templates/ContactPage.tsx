@@ -24,7 +24,7 @@ export async function ContactPage({ locale }: TContactPage) {
     >
       <main className="grid justify-items-center gap-12 md:gap-20">
         <DecorationWrapper theme="dark" type="single">
-          <h1 className="text-2xl font-bold">
+          <h1 className="text-4xl font-bold">
             {t('title', { ns: 'contact' })}
           </h1>
         </DecorationWrapper>
@@ -32,7 +32,7 @@ export async function ContactPage({ locale }: TContactPage) {
           <div className="flex items-center gap-4 group ">
             <EnvelopeIcon className="group-hover:fill-primary" />
             <a
-              href={t('email.href', { ns: 'contact' })}
+              href={`mailto:${t('email.href', { ns: 'contact' })}`}
               className="group-hover:text-primary"
             >
               {t('email.text', { ns: 'contact' })}
@@ -41,7 +41,7 @@ export async function ContactPage({ locale }: TContactPage) {
           <div className="flex items-center gap-4 group">
             <PhoneIcon className="group-hover:fill-primary" />
             <a
-              href={t('phone.href', { ns: 'contact' })}
+              href={`tel:${t('phone.href', { ns: 'contact' })}`}
               className="group-hover:text-primary"
             >
               {t('phone.text', { ns: 'contact' })}

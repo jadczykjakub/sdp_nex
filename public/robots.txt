@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sdp.legal
+
+# Sitemaps
+Sitemap: https://sdp.legal/sitemap.xml

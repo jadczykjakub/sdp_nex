@@ -62,11 +62,11 @@ export async function ExpertiseSlugPage({locale, slug}: TExpertiseSlugPage) {
                 </DecorationWrapper>
               </div>
               <Link
-                href={`/team/${contactPerson?.slug}`}
+                href={locale === "en" ? `/team/${contactPerson?.slug}` : `/${locale}/team/${contactPerson?.slug}`}
                 className="group grid gap-2 justify-items-center px-7 py-5 rounded-xl border-2 border-secondary"
               >
                 <Image
-                  src={`/sdp_nex/${contactPerson?.metadata.imageProfileSource}`}
+                  src={`/${contactPerson?.metadata.imageProfileSource}`}
                   width="140"
                   height="140"
                   alt={`${contactPerson?.metadata.title}`}
@@ -93,7 +93,8 @@ export async function ExpertiseSlugPage({locale, slug}: TExpertiseSlugPage) {
               >
                 {prevExpertise && (
                   <Link
-                    href={prevExpertise?.slug}
+                  
+                    href={locale !== "en" ? `/${locale}/expertise/${prevExpertise?.slug}` : `/expertise/${prevExpertise?.slug}`}
                     className="group flex gap-8 items-center"
                   >
                     <ArrowIcon className="group-hover:translate-x-2 transition-transform rotate-180" />
@@ -111,7 +112,7 @@ export async function ExpertiseSlugPage({locale, slug}: TExpertiseSlugPage) {
               >
                 {nextExpertise && (
                   <Link
-                    href={nextExpertise?.slug}
+                    href={locale !== "en" ? `/${locale}/expertise/${nextExpertise?.slug}` : `/expertise/${nextExpertise?.slug}`}
                     className="group flex gap-8 items-center"
                   >
                     {nextExpertise?.metadata.title}

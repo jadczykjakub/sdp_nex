@@ -1,10 +1,10 @@
 {
     "hero": {
-        "title1": "Własność intelektualna w biznesie.",
-        "title2": "Doradzamy jak chronić innowacje, markę i produkt. Wspieramy klientów przy umowach i sporach dotyczących własności intelektualnej.",
-        "title3": "Łączymy wiedzę prawniczą i techniczną ze zrozumieniem biznesu. Nasi eksperci pracowali przy sprawach, które ukształtowały polską praktykę własności intelektualnej. Są notowani w międzynarodowych rankingach prawniczych i wykładają na renomowanych polskich uczelniach.",
+        "title1": "Polish Intellectual Property Law Firm.",
+        "title2": "Comprehensive IP services for corporations and law firms.",
+        "title3": "We took part in cases which defined the Polish IP landscape. We combine law & science by having skilled attorneys, patent attorneys and scientists in one office.",
         "button": {
-            "title": "Usługi",
+            "title": "Our services",
             "href": "expertise"
         }
     },
